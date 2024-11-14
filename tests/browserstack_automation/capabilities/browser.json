@@ -9,7 +9,7 @@
       "seleniumVersion": "4.11.0",
       "autoWait": 10
     }
-  },
+  } ,
   {
     "browserName": "Safari",
     "bstack:options": {
@@ -20,7 +20,5 @@
       "seleniumVersion": "4.11.0",
       "autoWait": 10
     }
-  }
-   
- 
+  } 
 ]
