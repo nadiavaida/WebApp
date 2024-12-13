@@ -39,8 +39,9 @@ describe('Candidates Page', () => {
       const titleStr = ' Candidates - WeVote';
       console.log(`Running verifyTitleWhenStateSelected -> Using sate: ${state}`);
       await CandidatesPage.load();
-      await CandidatesPage.stateSelect.selectByVisibleText(state);
       await driver.pause(waitTime);
+      await CandidatesPage.stateSelect.selectByVisibleText(state);
+      await driver.waitUntil(async () => ((await driver.getUrl()).toString()).includes(state.toLowerCase()), { timeout: 8000 });
       const expectedTitle = state + titleStr;
       const actualTitle = await driver.getTitle();
       assert.equal(actualTitle, expectedTitle);
@@ -101,6 +102,7 @@ describe('Candidates Page', () => {
       const candidateCards = await CandidatesPage.CandidateCardList;
       for (let i = 0; i < candidateCards.length; i++) {
         const card = candidateCards[i];
+        await driver.waitUntil(async () =>  !(await card.getAttribute('id')).includes('Loading'), { timeout: 5000 });
         const cardId = await card.getAttribute('id');
         const candidateNameDisplayed = await CandidatesPage.getCandidateCardCandidateName(cardId);
         const stateNameDisplayed = await CandidatesPage.getCandidateCardState(cardId);
