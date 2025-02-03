@@ -102,8 +102,10 @@ describe('Candidates Page', () => {
       const candidateCards = await CandidatesPage.CandidateCardList;
       for (let i = 0; i < candidateCards.length; i++) {
         const card = candidateCards[i];
-        await driver.waitUntil(async () =>  !(await card.getAttribute('id')).includes('Loading'), { timeout: 5000 });
+        //wait for 4 seconds for the data to get loaded, suggested by Dale 01/14/2025.
+       await driver.waitUntil(async () =>  !(await card.getAttribute('id')).includes('Loading'), { timeout: 4000 });
         const cardId = await card.getAttribute('id');
+        console.log(`Card Id: ${cardId}`);
         const candidateNameDisplayed = await CandidatesPage.getCandidateCardCandidateName(cardId);
         const stateNameDisplayed = await CandidatesPage.getCandidateCardState(cardId);
         const partyNameDisplayed = await CandidatesPage.getCandidateCardPartyName(cardId);
