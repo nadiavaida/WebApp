@@ -17,20 +17,20 @@ class CandidatesPage extends Page {
   }
 
   get pageHeaders () {
-    return $$('h2#WhatIsHappeningTitle');
+    return $$('h2#whatIsHappeningTitle');
   }
 
   get CandidateCardList () {
     return $$("//div[contains(@id,'cardForListBodyWrapper')]");
   }
 
-  async getCandidateCardCandidateName(cardId) {
+  async getCandidateCardCandidateName (cardId) {
     const candidate = await $(`//div[@id='${cardId}']//a[@id='candidateCardDisplayName' or @id='representativeCardDisplayName']`);
     const candidateName = await candidate.getText();
     return candidateName;
   }
 
-  async getCandidateCardState(cardId) {
+  async getCandidateCardState (cardId) {
     const candidate = await $(`//div[@id='${cardId}']//div[contains(@id,'stateName')]`);
     const stateText = await candidate.getText();
     return stateText;

@@ -8,11 +8,11 @@
         "Mandatory":"N"
     },
     {
-        "HeaderText":"More Politicians",
-        "Mandatory":"Y"
+        "HeaderText":"More PoliticiansX",
+        "Mandatory":"N"
     },
     {
-        "HeaderText":"Current Representatives",
+        "HeaderText":"Current RepresentativesX",
         "Mandatory":"N"
     }
 ]
