@@ -8,7 +8,7 @@ const waitTime = 5000;
 
 describe('TopNavigation', () => {
 // TopNavigation_001
-  it('openWeVoteHomeLogo', async () => {
+  it('openWeVoteHomeLogo @BVT', async () => {
     await ReadyPage.load();
     await driver.pause(waitTime);
     await TopNavigation.getBallotLinkLocator.click();
@@ -37,7 +37,7 @@ describe('TopNavigation', () => {
   });
 
   // TopNavigation_002
-  it('openBallotTab', async () => {
+  it('openBallotTab @BVT', async () => {
     await ReadyPage.load();
     await driver.pause(waitTime);
     await TopNavigation.getBallotLinkLocator.click();
@@ -82,7 +82,7 @@ describe('TopNavigation', () => {
   //   });
 
   // TopNavigation_007
-  it('openDonateTab', async () => {
+  it('openDonateTab @BVT', async () => {
     await ReadyPage.load();
     await driver.pause(waitTime);
     await TopNavigation.toggleDonateTab();
@@ -108,7 +108,7 @@ describe('TopNavigation', () => {
   //   });
 
   // TopNavigation_009
-  it('openCandidatesTab', async () => {
+  it('openCandidatesTab @BVT', async () => {
     await ReadyPage.load();
     await driver.pause(waitTime);
     await TopNavigation.toggleCandidatesTab();
@@ -145,7 +145,7 @@ describe('TopNavigation', () => {
   // });
 
   // TopNavigation_011
-  it('openChallengesTab', async () => {
+  it('openChallengesTab @BVT', async () => {
     await ReadyPage.load();
     await driver.pause(waitTime);
     await TopNavigation.toggleChallengesTab();

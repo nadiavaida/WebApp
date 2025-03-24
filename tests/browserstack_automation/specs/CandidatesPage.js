@@ -14,7 +14,7 @@ const waitTime = 8000;
 
 describe('Candidates Page', () => {
   // Candidates_001
-  it('verifyAllStateNamesPresentforChooseState', async () => {
+  it('verifyAllStateNamesPresentforChooseState @BVT', async () => {
     await CandidatesPage.load();
     await driver.pause(waitTime);
     await CandidatesPage.stateSelect.click();

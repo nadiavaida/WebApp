@@ -27,7 +27,7 @@ beforeEach(async function () {
 });
 
 describe('Ballot Page', async () => {
-  it('verifyBallotPageLinksNavigations', async () => {
+  it('verifyBallotPageLinksNavigations @BVT', async () => {
     await ReadyPage.load();
     await driver.maximizeWindow();
     await expect(BallotPage.getViewBallotElement).toBeClickable();

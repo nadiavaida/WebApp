@@ -19,7 +19,7 @@ beforeEach(async () => {
 
 describe('FAQ Page', () => {
   // FAQ_001
-  it('verifyAboutLinkRedirected', async () => {
+  it('verifyAboutLinkRedirected @BVT', async () => {
     await expect(FAQPage.getFAQPageTitleElement).toHaveText('Frequently Asked Questions');
   });
 

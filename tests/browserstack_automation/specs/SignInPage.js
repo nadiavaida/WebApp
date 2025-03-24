@@ -26,7 +26,7 @@ const testEmails = [
 
 describe('SignIn', () => {
   // SignIn_001
-  it('verifySignInPage', async () => {
+  it('verifySignInPage @BVT', async () => {
     await expect(await SignIn.signInElement).toHaveText(expect.stringContaining('Sign In'));
   });
 
@@ -61,7 +61,7 @@ describe('SignIn', () => {
   });
 
   // SignIn_004
-  it('verifyAllButtonsAndFieldsAlignedAndPresent', async () => {
+  it('verifyAllButtonsAndFieldsAlignedAndPresent @BVT', async () => {
     await expect(SignIn.phoneNumberFieldElement).toBePresent();
     await expect(SignIn.emailFieldElement).toBePresent();
 

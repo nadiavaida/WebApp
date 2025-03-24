@@ -14,7 +14,7 @@ const waitTime = 8000;
 describe('Footer Links Navigation', () => {
  
   // FooterLinks_001 & FooterLinks_002
-  it('verifyPrivacyLinkRedirected & Terms link', async () => {
+  it('verifyPrivacyLinkRedirected & Terms link @BVT', async () => {
     console.log('Tcs : FooterLinks_001 && FooterLinks_002');
     await ReadyPage.load();
     await driver.pause(waitTime);
@@ -32,7 +32,7 @@ describe('Footer Links Navigation', () => {
   });
 
   // FooterLinks_003 and FooterLinks_004
-  it('verifyHowItWorksModalWindowOpen and verifyHowItWorksModalWindowClosed', async () => {
+  it('verifyHowItWorksModalWindowOpen and verifyHowItWorksModalWindowClosed @BVT', async () => {
     console.log('Tcs : FooterLinks_003 and FooterLinks_004');
     await ReadyPage.load();
     await driver.pause(waitTime);
@@ -45,7 +45,7 @@ describe('Footer Links Navigation', () => {
   });
 
     // FooterLinks_005
-  it('verifyHelpLink', async () => {
+  it('verifyHelpLink @BVT', async () => {
     console.log('Tcs : FooterLinks_005');
     await ReadyPage.load();
     await driver.pause(waitTime);
@@ -57,7 +57,7 @@ describe('Footer Links Navigation', () => {
   });
 
   // FooterLinks_006
-  it('verifyTeamLink', async () => {
+  it('verifyTeamLink @BVT', async () => {
     console.log('FooterLinks_006');
     await ReadyPage.load();
     await driver.pause(waitTime);
@@ -70,7 +70,7 @@ describe('Footer Links Navigation', () => {
   });
 
   // FooterLinks_007
-  it('verifyCreditsAndThanksLink', async () => {
+  it('verifyCreditsAndThanksLink @BVT', async () => {
     console.log('Tcs : FooterLinks_007');
     await ReadyPage.load();
     await driver.pause(waitTime);
@@ -83,7 +83,7 @@ describe('Footer Links Navigation', () => {
   });
 
   // FooterLinks_008
-  it('verifyVolunteeringOpportunitiesLink', async () => {
+  it('verifyVolunteeringOpportunitiesLink @BVT', async () => {
     console.log('Tcs : FooterLinks_008');
     await ReadyPage.load();
     await driver.pause(waitTime);
@@ -95,7 +95,7 @@ describe('Footer Links Navigation', () => {
   });
 
   // FooterLinks_009
-  it('verifyDonateLinkRedirected', async () => {
+  it('verifyDonateLinkRedirected @BVT', async () => {
     console.log('Tcs : FooterLinks_009');
     await ReadyPage.load();
     await driver.pause(waitTime + 2000);

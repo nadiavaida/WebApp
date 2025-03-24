@@ -25,7 +25,7 @@ const waitTime = 8000;
 describe('ReadyPage',  function () {
   this.timeout(9999999); 
  // Ready_001 and Ready_003
- it('verifyElectionCountDownRedirect and verifyViewYourBallotRedirect', async () => {
+ it('verifyElectionCountDownRedirect and verifyViewYourBallotRedirect @BVT', async () => {
    console.log('Tcs : Ready_001 and Ready_003');
    await ReadyPage.load();
    await driver.pause(waitTime);
