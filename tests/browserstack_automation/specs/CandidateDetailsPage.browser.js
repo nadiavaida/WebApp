@@ -57,7 +57,7 @@ describe('CandidateDetails PageBrowser', () => {
     await expect(stateName).toEqual(selectedCandidateState);
   });
 
-  it.only('verifyCandidatePartyDisplayed', async () => {
+  it('verifyCandidatePartyDisplayed', async () => {
     const jsonObjH = JSON.parse(fs.readFileSync(`${testDataPath}candidateDetailsPage.json`));
     const testData = jsonObjH[0].candidatePartyDisplayed;
     console.log(`Verifying verifyCandidatePartyDisplayed for candidate: ${testData}`);
