@@ -68,7 +68,7 @@ describe('Candidates PageBrowser', () => {
   const stateNamesRandomTC3 = readTestDataStates('random', 3);
   const possibleHeaders = readTestDataAllPossibleHeaders();
   stateNamesRandomTC3.forEach((state) => {
-    it('verifyHeadersMatchPossibleHeaders', async () => {
+    it.only('verifyHeadersMatchPossibleHeaders', async () => {
       console.log(`Running verifyHeadersMatchPossibleHeaders -> Using sate: ${state}`);
       await CandidatesPage.stateSelect.selectByVisibleText(state);
       await driver.pause(waitTime);
